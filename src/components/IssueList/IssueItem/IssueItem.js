@@ -23,7 +23,7 @@ const RightContainer = styled.article`
   align-items: center;
 `;
 
-function IssueItem({ issueInfo }) {
+function IssueItem({ issueInfo, handleClick }) {
   const {
     number,
     title,
@@ -35,7 +35,7 @@ function IssueItem({ issueInfo }) {
   } = issueInfo;
 
   return (
-    <Wrapper>
+    <Wrapper onClick={handleClick}>
       <LeftContainer>
         <p>#{number} {title}</p>
         <p>작성자: {login} 작성일: {updated_at}</p>
