@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import IssueItem from './IssueItem/IssueItem';
+
 import { getIssueList } from '../../api/githubApi';
 
 function IssueList() {
@@ -15,9 +17,13 @@ function IssueList() {
     fetchIssueList()
   }, []);
 
+  const renderIssueList = () => {
+    return issues.map((issue) => <IssueItem key={issue.id} issueInfo={issue} />);
+  };
+
   return (
     <div>
-      IssueList
+      {renderIssueList()}
     </div>
   );
 }
