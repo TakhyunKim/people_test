@@ -6,6 +6,21 @@
 - comments가 많은 순으로 정렬하여 issue들을 보여줍니다.
 - 각 issue들을 클릭하면 해당 issue의 상세 내용을 볼 수 있습니다.
 
+### Client
+---
+```
+git clone https://github.com/TakhyunKim/people_test.git
+
+cd people_test
+
+npm install
+
+.env
+REACT_APP_GITHUB_URL={원하는 github repo URL를 입력해주세요}
+
+REACT_APP_GITHUB_API_KEY={github api dev key를 입력해주세요}
+```
+
 ### 진행하면서 아쉬웠던 점
 - 문서를 읽고 습득하고 적용하는 과정이 생각보다 많은 시간을 할애했습니다.<br>
   3시간이라는 제한된 시간이었기에 빠르게 적용하는 퍼포먼스이 필수였지만<br>
