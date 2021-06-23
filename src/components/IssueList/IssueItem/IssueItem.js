@@ -9,6 +9,12 @@ const Wrapper = styled.section`
   border: 1px solid black;
   padding: 1.5em;
   margin: 1em;
+
+  &:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+  }
 `;
 
 const LeftContainer = styled.article`
